@@ -47,7 +47,7 @@ public class StudyMateDeleteGroup_steps {
 
     }
     @Then("user should be able to see the delete button is displayed  and enabled")
-    public void user_should_be_able_to_see_the_three_dots_button_is_displayed_and_enabled() {
+    public void user_should_be_able_to_see_the_delete_button_is_displayed_and_enabled() {
         studyMateHomePage.deleteGroupBtn.click();
         Assert.assertTrue(studyMateHomePage.deleteGroupBtn.isDisplayed());
         Assert.assertTrue(studyMateHomePage.deleteGroupBtn.isEnabled());
@@ -55,7 +55,7 @@ public class StudyMateDeleteGroup_steps {
     }
 
     @When("Delete confirmation popped up and user sees cancel and delete buttons are displayed and enabled")
-    public void delete_confirmation_popped_up_and_user_sees_cansel_and_delete_buttons_are_displayed_and_enabled() {
+    public void delete_confirmation_popped_up_and_user_sees_cancel_and_delete_buttons_are_displayed_and_enabled() {
         Flow.wait(500);
         Random random = new Random();
         int index = random.nextInt(studyMateHomePage.threeDotsBtn.size());
